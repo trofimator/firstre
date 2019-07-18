@@ -29,4 +29,5 @@ workflows:
       - hithere
       - test:
           requires:
+            - build
             - hithere
