@@ -7,11 +7,7 @@ class CounterButton2 extends PureComponent {
       count: 0
     };
   }
-  shouldComponentUpdate(
-    nextProps,
-
-    nextState
-  ) {
+  shouldComponentUpdate(nextProps, nextState) {
     if (this.state.count !== nextState.count) {
       return true;
     } else {
