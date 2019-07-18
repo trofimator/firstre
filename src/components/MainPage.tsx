@@ -8,7 +8,7 @@ import Header from './Header';
 
 class MainPage extends Component {
     
-    filterRobots = robots => {
+    const filterRobots = (robots) => {
         return robots.filter(robot=>{
             return robot.name.toLowerCase().includes(this.props.searchField.toLowerCase());
         });
