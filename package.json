@@ -5,6 +5,8 @@
   "homepage": "https:\\trofimator.github.io/firstre/",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "husky": "^3.0.0",
+    "pretty-quick": "^1.11.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
@@ -22,6 +24,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -33,6 +40,7 @@
   ],
   "devDependencies": {
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0"
+    "enzyme-adapter-react-16": "^1.14.0",
+    "prettier": "1.18.2"
   }
 }
